@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+body {
+  background: #2d2929;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: rgba(255,255,255,.4);
+  font-size: 12pt;
+  font-family: arial;
+}
+
+body a {
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+/*
+ * Cabecalho da pagina */
+header {
+  background-color: rgba(0,0,0,1);
+  width: 100%;
+  height: 100px;
+  float: left;
+}
+
+header div#logo {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+header div#logo #logo {
+  background-color: rgba(255,255,255,.4);
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin: 5px 1% 0 2%;
+  border-radius: 50%;
+}
+header div#logo #name {
+  width: 68%;
+  padding: 2px 1%;
+  text-align: left;
+  float: left;
+  margin: 5px 0 0 .5%;
+  font-size: 20pt;
+  font-weight: bolder;
+}
+header div#logo p {
+  width: 65%;
+  height: 55px;
+  float: left;
+  text-indent: 15px;
+  margin: 0 0 0 .5%;
+  text-align: justify;
+}
+
+header div#slideShow {
+  width: 72.5%;
+  height: 30px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12pt;
+  margin: 10px 1% 0 .5%;
+}
+
+header div#pesquisar {
+  background-color: #2d2929;
+  width: 45%;
+  height: 42px;
+  float: left;
+  margin: 6px .5%;
+  border: 2px solid #2d2929;
+  border-radius: .5rem;
+}
+header div#pesquisar label {
+  background-color: #2d2929;
+  padding: 0 2%;
+  height: 40px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  border: 1px solid black;
+  color: black;
+}
+header div#pesquisar input#texto {
+  background-color: black;
+  width: 68%;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: .5rem;
+  padding: 0 .5%;
+  float: left;
+  margin: 0 .5%;
+  color: rgba(255,255,255,.4);
+  font-size: 12pt;
+}
+header div#pesquisar input#btn-buscar {
+  background-color: #2d2929;
+  padding: 0 2.5%;
+  height: 42px;
+  border: 0;
+  font-size: 12pt;
+  border: 1px solid black;
+  float: right;
+  border-radius: .5rem;
+  color: black;
+  transition: transform .25s ease-in-out, color .25s ease-in-out, font-weight .25s ease-in-out;
+}
+header div#pesquisar input#btn-buscar:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  color: rgba(255,255,255,.4);
+  font-weight: bolder;
+}
+
+header div#controle {
+  width: 25%;
+  height: 47px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 1%;
+}
+header button {
+  background: rgba(0,0,0,.5);
+  width: 49%;
+  height: 40px;
+  float: left;
+  border: 0;
+  margin-top: 3px;
+  font-size: 14pt;
+  color: white;
+  border-radius: .5rem;
+  transition: transform .25s ease-in-out;
+}
+header button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+header button#btn-login {
+  margin-right: 1%;
+}
+header button#btn-login:hover {
+
+}
+header button#btn-criar {
+  border: 1px solid green;
+  float: right;
+  color: green;
+}
+header button#btn-criar:hover {
+
+}
+
+
+/*
+ * Corpo da pagina */
+section {
+  background-color: rgba(0,0,0,1);
+  width: 100%;
+  height: 60px;
+  float: left;
+  margin: 5px 0;
+}
+
+/*
+ * Roda-pe da pagina */
+ /* Formatacao do footer */
+ footer#roda-pe {
+   background-color: rgba(0, 0, 0, 1);
+   width: 100%;
+   height: 400px;
+   float: left;
+   border-radius: 2px;
+ }
+ div#conteiner-roda-pe {
+   width: 99.6%;
+   height: 361px;
+   float: left;
+   margin: 2px .2% 0 .2%;
+ }
+ div#um-pouco-de-nos {
+   width: 28.5%;
+   height: 361px;
+   float: left;
+ }
+ div#logo-nome-lema {
+   width: 100%;
+   height: 130px;
+   float: left;
+   margin-top: 20px;
+ }
+ div#logo-nome-lema #logo {
+   background: ;
+   width: 105px;
+   height: 105px;
+   float: left;
+   margin-top: 0;
+   margin-left: 10px;
+   border-radius: 50%;
+   border: 3px solid #2d2929;
+ }
+ div#logo-nome-lema #nome-lema {
+   width: 63%;
+   height: 110px;
+   float: left;
+   margin: 6px 0 0 5px;
+ }
+ div#logo-nome-lema #nome {
+   width: 63%;
+   float: left;
+   margin-top: 10px;
+   margin-left: 1%;
+ }
+ div#logo-nome-lema strong {
+   width: 100%;
+   font-size: 18pt;
+ }
+ div#nome-lema p {
+   float: left;
+   text-align: justify;
+   float: left;
+   margin-top: 10px;
+   text-indent: 15px;
+ }
+ div#social-media {
+   width: 100%;
+   height: 210px;
+   float: left;
+ }
+ div#social-media p {
+   width: 94%;
+   margin: 0;
+   margin-left: 3%;
+   text-indent: 20px;
+   text-align: justify;
+   float: left;
+ }
+ div#social-icons {
+   width: 97%;
+   height: 80px;
+   float: left;
+   margin-left: 3.5%;
+   margin-top: 5px;
+   margin-bottom: 6px;
+ }
+ div.item-list {
+   background-color: #2d2929;
+   width: 58px;
+   height: 58px;
+   float: left;
+   margin: 8px 1px 0 10px;
+   border: 2px solid #2d2929;
+   border-radius: 50%;
+   transition: transform ease-in-out .25s;
+ }
+ div.item-list:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+   margin-right: 0;
+ }
+ div.item-list #facebook, #instagram, #twitter, #youtube, #whatsapp {
+   background-image: url('../imagens/footer/icon-facebook.png');
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   float: left;
+   border-radius: 50%;
+ }
+ div.item-list #instagram {
+   background-image: url('../imagens/footer/icon-instagram.png');
+ }
+ div.item-list #twitter {
+   background-image: url('../imagens/footer/icon-twitter.png');
+ }
+ div.item-list #youtube {
+   background-image: url('../imagens/footer/icon-youtube.png');
+ }
+ div.item-list #whatsapp {
+   background-image: url('../imagens/footer/icon-whatsapp.png');
+ }
+
+ div#footer-menu {
+   width: 71%;
+   height: 301px;
+   float: right;
+   margin-top: 30px;
+ }
+ div.cardapio-list {
+   width: 24.7%;
+   height: 301px;
+   float: left;
+   border-left: 2px solid #2d2929;
+ }
+
+ div.cardapio-list .title {
+   width: 100%;
+   padding: 6px 0px;
+   float: left;
+   text-align: center;
+   font-size: 16pt;
+ }
+
+ div.cardapio-list ul {
+   width: 100%;
+   float: left;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+ div.cardapio-list li {
+   width: 90%;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   float: left;
+   padding: 10px 0;
+   margin-left: 5%;
+ }
+ div.cardapio-list a {
+   text-decoration: none;
+   color: #666;
+   transition: color ease-in-out .25s, text-shadow ease-in-out .25s;
+ }
+ div.cardapio-list a:hover {
+   color: white;
+   transform: scale(1.1);
+   text-shadow: 1px 1px 1px #2d2929;
+ }
+
+ footer#roda-pe #todos-direitos {
+   width: 98.6%;
+   padding: .5%;
+   float: left;
+   margin: 2px .2%;
+   text-align: center;
+ }

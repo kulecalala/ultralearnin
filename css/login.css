@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body {
+  background-color: ;
+  background-image: url('/../imagens/fundo/login-fundo.png');
+  background-size: cover;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+div#container {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+}
+div#login {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: .5rem;
+  width: 30%;
+  min-height: 450px;
+  max-height: 520px;
+  float: left;
+  margin: 80px 32.5% 0 32.5%;
+  box-shadow: 0px 1px 5px 10px rgba(0,0,0,.3);
+  justify-content: center;
+  align-items: center;
+}
+div#topo {
+  background-color: rgba(0,0,0,.5);
+  width: 30%;
+  height: 125px;
+  float: left;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, .5);
+  margin-left: 35%;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+
+div#login fieldset {
+  width: 80%;
+  margin: 0;
+  margin: 10px 6.5%;
+  float: left;
+  border-color: black;
+}
+div#login legend {
+  color: black;
+  font-size: 15pt;
+}
+div#login input {
+  background-color: rgba(0,0,0,.5);
+  border: 0;
+  width: 96%;
+  padding: 3%;
+  border-radius: .5rem;
+  color: white;
+
+}
+div#login button {
+  background-color: rgba(0,0,0,0);
+  width: 40%;
+  height: 40px;
+  float: left;
+  margin-top: 0px;
+  margin-left: 30%;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 1rem;
+  color: white;
+  font-size: 14pt;
+  box-shadow: 1px 2px 1px 2px rgba(0,0,0,.5);
+}
+div#login button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+div#login p {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin: 0;
+  margin-bottom:  10px;
+}
+div#login a {
+  color: black;
+  text-decoration: none;
+}
+div#login a:hover {
+  color: white;;
+}
+fieldset#avisos {
+  color: white;
+  text-align: justify;
+  border-color: red;
+}
+
+div#lembre-se-de-mim{
+  width: 80%;
+  float: left;
+  margin-left: 10%;
+}
+div#lembre-se-de-mim input {
+  margin: 10px 0;
+  width: 10%;
+  float: left;
+}
+div#lembre-se-de-mim p {
+  width: 80%;
+  float: left;
+  margin-top: 8px;
+  text-align: left;
+}

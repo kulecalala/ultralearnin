@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+div.livros {
+  background-color: rgba(0,0,0,.1);
+  width: 22%;
+  height: 260px;
+  float: left;
+  margin: 0px .2% 3px .2px;
+  color: white;
+}

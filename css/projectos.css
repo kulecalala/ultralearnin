@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+section#projectos {
+  background-color: rgba(255,255,255,1);
+  width: 90%;
+  min-height: 60vh;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 5px;
+  padding: 0px 5px;
+  border-radius: .5rem;
+}
+section#projectos header {
+  width: 98%;
+  height: 55px;
+  margin: 17px auto 5px auto;
+}
+section#projectos header h2 {
+  background-color: #2d2929;
+  width: 16%;
+  padding: 13px 0;
+  text-align: center;
+  border-radius: .5rem;
+  margin: 0;
+  float: left;
+}
+section#projectos header form {
+  background-color: rgba(0,0,0,.5);
+  width: 81%;
+  height: 35px;
+  float: right;
+  margin: 8px 0;
+  padding: 2px 1%;
+  border-radius: .5rem;
+}
+section#projectos header form input {
+  background-color: rgba(255,255,255,1);
+  width: 38%;
+  height: 100%;
+  float: left;
+  border-radius: .5rem 0 0 .5rem;
+  padding: 0 1%;
+  font-size: 12pt;
+  color: rgba(0,0,0,1);
+}
+section#projectos header form div#filtros {
+  background-color: rgba(255,255,255,1);
+  width: 53%;
+  height: 100%;
+  float: left;
+  margin: 0 1%;
+}
+section#projectos header form div#filtros label {
+  width: 14.5%;
+  float: left;
+  padding: 8px .5%;
+  text-align: right;
+  color: rgba(0,0,0,1);
+}
+section#projectos header form div#filtros select {
+  background-color: rgba(0,0,0,0);
+  width: 20.61%;
+  height: 100%;
+  border: 0;
+  float: left;
+  margin: 0 0 0 .5%;
+  font-size: 12pt;
+  color: rgba(0,0,0,1);
+}
+section#projectos header form div#filtros select:hover {
+  background-color: rgba(0,0,0,.1);
+  cursor: pointer;
+}
+section#projectos header form input#btn-procurar {
+  width: 5%;
+  float: right;
+  border-radius: 0 .5rem .5rem 0;
+  transition: color .25s, font-weight .25s, transform .25s;
+}
+section#projectos header form input#btn-procurar:hover {
+  color: black;
+  font-weight: bolder;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+section#projectos section#lista-projectos {
+  width: 96%;
+  min-height: 70vh;
+  float: left;
+  padding: 0;
+  margin: 5px 2%;
+
+}
+section#lista-projectos div.projecto {
+  background-color: #2d2929;
+  width: 99%;
+  min-height: 250px;
+  float: left;
+  margin-bottom: 5px;
+  padding: 6px .5%;
+  color: rgba(255,255,255,.7);
+}
+section#lista-projectos div.projecto div.foto {
+  background-color: rgba(0,0,0,.5);
+  width: 25%;
+  height: 302px;
+  float: left;
+}
+section#lista-projectos div.projecto div.foto img {
+  width: 100%;
+  height: 100%;
+}
+section#lista-projectos div.projecto div.titulo {
+  background-color: rgba(0,0,0,.5);
+  width: 73.5%;
+  float: right;
+  padding: 6px .5%;
+  font-size:: 12pt;
+  text-align: center;
+}
+section#lista-projectos div.projecto div.titulo a {
+  float: right;
+  text-decoration: none;
+  color: rgba(255,255,255,.7);
+}
+section#lista-projectos div.projecto div.titulo a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+section#lista-projectos div.projecto div.detalhes {
+  background-color: rgba(0,0,0,.5);
+  width: 73.5%;
+  height: 180px;
+  float: right;
+  padding: 3px .5%;
+  margin: 5px 0;
+  font-size: 12pt;
+  text-align: justify;
+  overflow: hidden;
+}
+section#lista-projectos div.projecto div.detalhes:hover {
+  overflow: auto visible;
+}
+section#lista-projectos div.projecto div.adicionais {
+  width: 74.5%;
+  height: 35px;
+  float: right;
+  margin-left: .5%;
+  margin-bottom: 5px;
+}
+section#lista-projectos div.projecto div#adicionais {
+  margin-bottom: 0;
+}
+section#lista-projectos div.projecto div.adicionais div.items {
+  background-color: rgba(0,0,0,.5);
+  width: 23.6%;
+  padding: 8.2px .5%;
+  margin-right: .5%;
+  float: left;
+  font-size: 12pt;
+}
+section#lista-projectos div.projecto div.adicionais div#items {
+  margin-right: 0;
+}
+section#lista-projectos div.projecto div.adicionais div.items a {
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+}
+section#lista-projectos div.projecto div.adicionais div.items a:hover {
+  color: rgba(255,255,255,1);
+  transform: scale(1.1);
+}
+
+
+section#lista-projectos div.projecto  div.btns-controls {
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  height: 35px;
+  float: left;
+  margin-top: 5px;
+}
+
+section#projectos section#numero-de-paginas {
+  background-color: green;
+  width: 97%;
+  height: 34px;
+  float: left;
+  margin-bottom: 15px;
+  margin-left: 1%;
+  padding: 3px .5%;
+}

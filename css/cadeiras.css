@@ -1,0 +1,391 @@
+
+@charset "UTF-8";
+
+div#cad-titulo {
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  padding: 5px 0;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+div#cad-imagem {
+  background-color: rgba(0,0,0,.1);
+  width: 34%;
+  height: 77.1vh;
+  float: left;
+  margin: 3px 0 0 .5%;
+}
+div#cad-imagem img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  float: left;
+}
+
+
+div.cad-sub-titulo {
+  background-color: rgba(0,0,0,.5);
+  width: 64.7%;
+  padding: 2.5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  float: right;
+  margin-top: 3px;
+  margin-right: .5%;
+}
+div.cad-dados {
+  background-color: rgba(0,0,0,0);
+  width: 64.7%;
+  min-height: 30px;
+  float: right;
+  margin-top: 2px;
+  margin-right: .5%;
+}
+div.cad-dados .cad-name {
+  width: 20%;
+  padding: 5px .5% 5px 0;
+  float: left;
+  text-align: right;
+  margin-right: .5%;
+}
+div.cad-dados .cad-conteudo {
+  width: 78%;
+  min-height: 27px;
+  max-height: 97px;
+  float: right;
+  padding: 1px .25%;
+  overflow: hidden;
+  text-align: justify;
+  margin-right: .5%;
+}
+div.cad-dados .cad-conteudo:hover {
+  overflow: auto visible;
+}
+div.cad-dados textarea {
+  background-color: rgba(255,255,255,.5);
+  width: 99%;
+  height: 90px;
+  float: left;
+  border: 0;
+  overflow: hidden;
+}
+div.cad-dados textarea:hover {
+  overflow: auto visible;
+}
+div.cad-dados .cad-conteudo-alinhar {
+  width: 78%;
+  float: right;
+  padding: 5px .25%;
+  margin-right: .5%;
+}
+div.cad-dados .cad-estados {
+  background-color: rgba(0,0,0,.5);
+  width: 23.8%;
+  margin: 2px .1%;
+  float: left;
+  padding: 5px .5%;
+}
+div.cad-dados .title-notas {
+  background-color: rgba(0,0,0,0);
+  width: 99%;
+  padding: 2.5px 0;
+  text-align: center;
+  float: left;
+  margin: 2px .5%;
+}
+div.cad-dados .btn-add-notas {
+  background-color: rgba(0,0,0,0);
+  width: 99%;
+  padding: 2.5px 0;
+  text-align: center;
+  float: left;
+  margin: 2px .5%;
+}
+div.cad-dados .btn-add-notas button {
+  border: 0;
+  border-radius: .2rem;
+  cursor: pointer;
+}
+div.cad-dados button#btn-editar-cad {
+  float: left;
+  margin-left: 43%;
+}
+
+
+/* Editar conteudos */
+.editar-conteudo-cade {
+  background-color: rgba(0,0,0,.7);
+  width: 79%;
+  height: 549px;
+  float: left;
+  position: fixed;
+  border: 1px solid black;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.30s ease-in-out, visibility 0.30s ease-in-out, transform 0.30s ease-in-out;
+}
+.editar-conteudo-notas {
+  background-color: rgba(0,0,0,.5);
+  width: 79%;
+  height: 549px;
+  float: left;
+  position: fixed;
+  border: 1px solid black;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.30s ease-in-out, visibility 0.30s ease-in-out, transform 0.30s ease-in-out;
+}
+div.editar-conteudo-cade div.titlo-da-opcao, div.caixa-de-conteudos, div.buttoes-de-controle  {
+  background-color: rgba(255,255,255,1);
+  width: 70%;
+  float: left;
+  margin: 0 15%;
+  color: black;
+}
+div.editar-conteudo-cade div.titlo-da-opcao {
+  text-align: center;
+  margin-top: 30px;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 12px 0;
+  font-size: 14pt;
+}
+div.editar-conteudo-cade div.caixa-de-conteudos, div.buttoes-de-controle {
+  margin-top: 4px;
+  height: 350px;
+}
+div.editar-conteudo-cade div.caixa-de-conteudos div.descricao, div.conteudos {
+  float: left;
+  margin-top: 4px;
+  margin-left: .5%;
+  padding: 0;
+  font-size: 12pt;
+}
+div.editar-conteudo-cade div.caixa-de-conteudos div.descricao {
+  width: 30%;
+  padding: 5.5px 0;
+  text-align: right;
+}
+div.editar-conteudo-cade div.caixa-de-conteudos div#descricao {
+  margin-top: 113px;
+}
+div.editar-conteudo-cade div.caixa-de-conteudos div.conteudos {
+  height: 29px;
+  width: 68.5%;
+  float: right;
+  margin-right: .5%;
+}
+div.editar-conteudo-cade div.caixa-de-conteudos div#conteudos {
+  height: 138px;
+}
+div.editar-conteudo-cade div.caixa-de-conteudos div.conteudos select, input, textarea {
+  background-color: rgba(0,0,0,.1);
+  width: 99%;
+  height: 29px;
+  border: 0;
+  padding: 0;
+  float: left;
+}
+div.editar-conteudo-cade div.caixa-de-conteudos div.conteudos textarea {
+  height: 138px;
+}
+div.editar-conteudo-cade div.buttoes-de-controle {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  height: 50px;
+}
+div.editar-conteudo-cade div.buttoes-de-controle input {
+  margin: 0;
+  width: 32%;
+  float: left;
+  margin: 10px 0;
+  border-radius: .5rem;
+  color: black;
+  font-size: 12pt;
+}
+div.editar-conteudo-cade div.buttoes-de-controle input:hover {
+  cursor: pointer;
+}
+div.editar-conteudo-cade div.buttoes-de-controle input#update {
+  margin-left: 1%;
+  background-color: green;
+}
+div.editar-conteudo-cade div.buttoes-de-controle input#delete {
+  background-color: red;
+  float: right;
+  margin-right: 1%;
+}
+div.editar-conteudo-cade div.buttoes-de-controle input#restaurar {
+  background-color: greenyellow;
+  margin-left: 1%;
+}
+
+div.editar-conteudo-cade span, .editar-conteudo-notas span {
+  background-color: rgba(0,0,0,.5);
+  width: 20px;
+  height: 20px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  font-size: 16pt;
+  margin-right: 1%;
+}
+div.editar-conteudo-cade span:hover, .editar-conteudo-notas span:hover {
+  color: red;
+}
+
+div#see-mys-grades {
+  background-color: rgba(0,0,0,.1);
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+
+button#btn-editar-cad {
+  width: 20%;
+  padding: 2.5px 0;
+  float: right;
+  border: 0;
+  margin: 3px 0;
+  margin-left: 20%;
+  margin-right: 20%;
+  cursor: pointer;
+  color: black;
+  border-radius: .5rem;
+  border: 1px solid black;
+}
+
+div.tela-bloqueio-cadeiras {
+  background-color: #2d2929;
+  width: 100%;
+  color: black;
+  height: 548px;
+  float: right;
+  font-size: 12pt;
+}
+div.tela-bloqueio-cadeiras div#topo {
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  height: 60px;
+  float: left;
+  margin-bottom: 5px;
+  color: black;
+}
+div.tela-bloqueio-cadeiras div#topo div#buscar {
+  background-color: rgba(0,0,0,.5);
+  width: 50%;
+  height: 30px;
+  padding: 3px .5%;
+  float: left;
+  margin: 12px  1% 0 2%;
+  border-top-left-radius: .5rem;
+  font-size: 12pt;
+}
+div.tela-bloqueio-cadeiras div#topo div#buscar input {
+  background-color: rgba(255,255,255,.5);
+  width: 99%;
+  height: 24px;
+  padding: 3px .5%;
+  float: left;
+  border-top-left-radius: .5rem;
+  font-size: 12pt;
+}
+div.tela-bloqueio-cadeiras div#topo div#buscar input:hover {
+  background-color: rgba(255,255,255,1);
+}
+div.tela-bloqueio-cadeiras div#topo div#filtro {
+  background-color: rgba(0,0,0,.5);
+  width: 33%;
+  height: 30px;
+  padding: 3px .5%;
+  float: left;
+  margin: 12px  1% 0 0;
+}
+div.tela-bloqueio-cadeiras div#topo div#filtro label {
+  background-color: rgba(255,255,255,0);
+  width: 26.5%;
+  padding: 6px .5%;
+  float: left;
+  text-align: right;
+  margin-right: .5%;
+}
+div.tela-bloqueio-cadeiras div#topo div#filtro select {
+  background-color: rgba(255,255,255,.5);
+  width: 71%;
+  padding: 6px .5%;
+  float: left;
+  border: 0;
+  margin: 0 .5% 0 .5%;
+  font-size: 11pt;
+}
+div.tela-bloqueio-cadeiras div#topo div#filtro select:hover {
+  background-color: rgba(255,255,255,1);
+}
+div.tela-bloqueio-cadeiras div#topo button {
+  background-color: rgba(0,0,0,.5);
+  width: 9%;
+  height: 35px;
+  padding: 5px .5%;
+  float: right;
+  margin: 12px  2% 0 0;
+  border: 0;
+  border-top-right-radius: .5rem;
+}
+div.tela-bloqueio-cadeiras div#topo button:hover {
+  background-color: rgba(0,0,0,.7);
+  cursor: pointer;
+  color: white;
+  transform: scale(1.1);
+  font-weight: bolder;
+}
+div.tela-bloqueio-cadeiras div#resultados-cadeiras {
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  height: 478px;
+  float: left;
+  overflow: auto;
+  border-bottom: 5px solid white;
+}
+div.tela-bloqueio-cadeiras div#resultados-cadeiras h2 {
+  width: 94%;
+  padding: 7px 1%;
+  float: left;
+  margin: 5px 2%;
+}
+div.tela-bloqueio-cadeiras div#resultados-cadeiras p {
+  float: left;
+  padding: 2px 1%;
+  margin: 2px 3%;
+  width: 92%;
+}
+div.tela-bloqueio-cadeiras div#resultados-cadeiras div.resultados-da-busca-cad {
+  background-color: rgba(0,0,0,0);
+  width: 96%;
+  float: left;
+  margin: 5px 2%;
+  padding: 0;
+}
+div.tela-bloqueio-cadeiras div#resultados-cadeiras div.resultados-da-busca-cad .td {
+  padding: 2px .5%;
+  max-height: 50px;
+  overflow: auto;
+  align-items: left;
+  justify-content: left;
+}
+div.tela-bloqueio-cadeiras div#resultados-cadeiras div.resultados-da-busca-cad  #td-desc {
+  text-align: justify;
+}
+
+
+
+/**/

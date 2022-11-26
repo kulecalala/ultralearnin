@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+section#visualizar-pesquisas {
+  background-color: rgba(0,0,0,.3);
+  width: 80%;
+  height: 83vh;
+  float: left;
+}

@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+div#conteiner-sites {
+  background-color: rgba(0, 0, 0, 0);
+  width: 90%;
+  height: 83.5vh;
+  float: left;
+  margin: 0px 5%;
+}
+div#sites-buscar {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 50px;
+  float: left;
+  margin-bottom: 5px;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+div#sites-buscar div#title-sites-s {
+  background-color: #2d2929;
+  width: 10%;
+  padding: 6px 0;
+  border-radius: .5rem;
+  text-align: center;
+  margin: 5px 0 3px .4%;
+  color: white;
+  font-size: 18pt;
+  font-weight: bolder;
+  float: left;
+}
+div#sites-buscar div#form-busca-s {
+  background-color: rgba(0,0,0,.5);
+  width: 80%;
+  height: 24px;
+  float: left;
+  padding: 4.5px .5%;
+  margin: 9px .4% 0 1%;
+  border-radius: .5rem;
+}
+div#sites-buscar div#form-busca-s input#dados-busca-text {
+  background-color: rgba(255,255,255,1);
+  width: 50%;
+  height: 19px;
+  float: left;
+  padding: 2px .5%;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+div#sites-buscar div#form-busca-s input#btn-buscar-site {
+  background-color: rgba(255,255,255,1);
+  width: 10%;
+  height: 24px;
+  padding: 2px .5%;
+  float: right;
+  font-size: 12pt;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+div#sites-buscar div#form-busca-s input#btn-buscar-site:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+section#sites {
+  background-color: rgba(255, 255, 255, 1);
+  width: 72%;
+  height: 66.5vh;
+  float: left;
+  overflow: auto;
+  margin: 0;
+  border: 3px solid white;
+}
+aside#sugestoes-sites {
+  background-color: rgba(255, 255, 255, 1);
+  width: 27%;
+  height: 75vh;
+  float: right;
+  margin: 0;
+  border-bottom-right-radius: .5rem;
+}
+div#lista-sites {
+  width: 100%;
+  min-height: 60vh;
+  float: left;
+  margin: 0;
+}
+div#lista-sites .dados-sites {
+  background-color: rgba(0,0,0,1);
+  width: 98.3%;
+  padding: 3px .5%;
+  max-height: 250px;
+  margin-left: .26%;
+  margin-bottom: 4px;
+  float: left;
+  border-radius: .5rem;
+}
+div#lista-sites .icon, div#lista-sites .conjunto {
+  width: 8%;
+  height: 90px;
+  float: left;
+}
+div#lista-sites .conjunto .options {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin-left: 10%;
+  margin-top: 8px;
+  border-radius: 50%;
+}
+div#lista-sites .conjunto .options:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+div#lista-sites .conjunto #options {
+  margin-left: 45%;
+  margin-top: 5px;
+}
+div#lista-sites .options img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+div#lista-sites .icon img {
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+div#lista-sites .conjunto {
+  width: 12%;
+  float: right;
+}
+div#lista-sites .nome, .relacionado_a, .descricao, .mais-dados {
+  background-color: #2d2929;
+  margin-left: .5%;
+  width: 38.27%;
+  padding: 3px .5%;
+  float: left;
+  font-size: 10pt;
+  color: white;
+}
+div#lista-sites .descricao, .mais-dados {
+  width: 78%;
+  margin-top: 2px;
+}
+div#lista-sites .descricao {
+  min-height: 61px;
+  max-height: 196px;
+  overflow: hidden;
+  text-align: justify;
+}
+div#lista-sites .descricao:hover {
+  overflow: auto visible;
+}
+div#lista-sites .mais-dados {
+  margin-left: 8.5%;
+}
+div#pagina-sites {
+  width: 100%;
+  height: 4.5vh;
+  float: left;
+}
+
+div#sugestoes-sites {
+  width: 100%;
+  height: 90.8%;
+  margin-top: 3px;
+  float: left;
+}
+
+input#nome-s {
+  width: 83%;
+}
+input#link-s {
+  width: 86%;
+}
+
+section#numero-paginas {
+  background-color: rgba(255, 255, 255, 1);
+  width: 71.5%;
+  height: 40px;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding: 3px .5%;
+  border-bottom-left-radius: .5rem;
+}
+section#numero-paginas a {
+  text-decoration: none;
+}
+section#numero-paginas .aviso-sites, div#lista-sites .aviso-sites {
+  width: 100%;
+  height: 100%;
+  float: left;
+  font-size: 16pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12pt;
+}
+div#lista-sites .aviso-sites p {
+  padding: 150px 0;
+  width: 100%;
+  float: left;
+  font-size: 18pt;
+  text-align: center;
+}
+div#lista-sites .aviso-sites p a {
+  color: rgba(0,0,0,.6);
+  text-decoration: none;
+}
+div#lista-sites .aviso-sites p a:hover {
+  color: black;
+}
+
+div#lista-sites #form-editar-site {
+  background-color: rgba(0,0,0,.5);
+  width: 80%;
+  height: 435px;
+  margin: 0px auto;
+  color: black;
+  border-radius: .5rem;
+}
+div#lista-sites #form-editar-site h3 {
+  margin: 0;
+  padding: 10px 1% 0px 1%;
+  float: left;
+  width: 98%;
+  font-size: 16pt;
+}
+div#lista-sites #form-editar-site h3 a {
+  float: right;
+  font-size: 12pt;
+  font-weight: normal;
+  margin-top: 4px;
+  color: white;
+  text-decoration: none;
+}
+div#lista-sites #form-editar-site h3 a:hover {
+  color: black;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes {
+  width: 94%;
+  height: 345px;
+  padding: 5px 3%;
+  float: left;
+  margin: 5px 0;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes input {
+  background-color: rgba(0,0,0,.3);
+  width: 98%;
+  height: 30px;
+  padding: 1px 1%;
+  float: left;
+  border-radius: .3rem;
+  margin-top: 3px;
+  font-size: 11.5pt;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes input#logo-site {
+  width: 48%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes label#alternativo {
+  background-color: rgba(0,0,0,.3);
+  width: 48.5%;
+  height: 20px;
+  float: left;
+  margin: 3px 0 0 .5%;
+  padding: 0 .5%;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  text-align: left;
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes input:hover {
+  background-color: white;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes textarea {
+  background-color: rgba(0,0,0,.3);
+  width: 99%;
+  padding: 3px .5%;
+  height: 195px;
+  float: left;
+  border-radius: .3rem;
+  margin-top: 5px;
+  font-size: 11pt;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes textarea:hover {
+  background-color: white;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes select {
+  background-color: rgba(0,0,0,.3);
+  width: 100%;
+  padding: 3px 0;
+  height: 33px;
+  float: left;
+  border-radius: .3rem;
+  margin-top: 5px;
+  font-size: 11pt;
+}
+div#lista-sites #form-editar-site #caixa-de-componentes select:hover {
+  background-color: white;
+}
+
+div#lista-sites #form-editar-site #btns {
+  width: 94%;
+  height: 30px;
+  float: left;
+  margin-left: 3%;
+}
+div#lista-sites #form-editar-site #btns input {
+  width: 33%;
+  height: 30px;
+  float: left;
+  font-size: 11pt;
+}
+div#lista-sites #form-editar-site #btns input#btn-actualizar {
+  background-color: green;
+  border-bottom-left-radius: .5rem;
+}
+div#lista-sites #form-editar-site #btns input#btn-restaurar {
+  background-color: yellow;
+  margin: 0 .5%;
+}
+div#lista-sites #form-editar-site #btns input#btn-apagar {
+  background-color: red;
+  border-bottom-right-radius: .5rem;
+}
+div#lista-sites #form-editar-site #btns input:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+section#numero-paginas .aviso-sites a {
+  color: rgba(0,0,0,.6);
+}
+section#numero-paginas .aviso-sites a:hover, p a:hover {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mais espacos Kkkkkkkkkkkkkkk */

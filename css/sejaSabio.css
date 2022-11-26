@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+main#seja-sabio {
+  background: red;
+  width: 80%;
+  border-radius: .5rem;
+  margin: 105px auto 5px auto;
+}
+section#seja-sabio-lista, section#numero-paginas-sabio {
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  float: left;
+}
+section#numero-paginas-sabio {
+  width: 99%;
+  padding: 3px .5%;
+  padding-bottom: 6px;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+section#seja-sabio-lista {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+div#lista-style {
+  width: 99.86%;
+  min-height: 100vh;
+  float: left;
+}
+div#lista-style #lidas-nao-de-dicas {
+  max-width: 50%;
+  padding: 2px .5%;
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 1%;
+  text-align: right;
+  color: rgba(0,0,0,.5);
+}
+div#lista-style #lidas-nao-de-dicas:hover {
+  cursor: pointer;
+  color: black;
+}
+div#lista-style #not-found-dica {
+  background-color: rgba(0,0,0,.5);
+  width: 80%;
+  height: 50vh;
+  margin: 40px auto;
+  color: black;
+  font-size: 18pt;
+  border-radius: .5rem;
+}
+div#lista-style #not-found-dica p {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+div#lista-style #not-found-dica a {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+div#lista-style #not-found-dica a:hover {
+  color: black;
+  transform: scale(1.1);
+}
+div#lista-style h3 {
+  color: black;
+  width: 98%;
+  float: left;
+  margin: 0 1%;
+  font-size: 16pt;
+  margin-bottom: 10px;
+}
+div#lista-style h3 a {
+  font-size: 11pt;
+  font-weight: normal;
+  float: right;
+  margin-top: 4px;
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+div#lista-style h3 a:hover {
+   color: black;
+}
+div#lista-style #editar-dica-s {
+  background-color: rgba(0,0,0,.2);
+  width: 80%;
+  height: 440px;
+  margin: 10px auto;
+  border-radius: .5rem;
+}
+div#lista-style #editar-dica-s {
+  height: 467px;
+}
+div#lista-style #editar-dica-s h4 {
+  width: 100%;
+  margin: 0 0;
+  padding: 15px 0;
+  text-align: center;
+  color: black;
+  font-size: 15pt;
+}
+div#lista-style #editar-dica-s h4 a {
+  float: right;
+  margin-right: 1%;
+  height: 15px;
+  font-size: 10pt;
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+div#lista-style #editar-dica-s h4 a:hover {
+  font-weight: bolder;
+}
+div#lista-style #editar-dica-s textarea#dica {
+  background-color: rgba(0,0,0,.1);
+  width: 89%;
+  margin: 0 5%;
+  height: 280px;
+  border: 0;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  padding: 4px .5%;
+  border: 1px solid black;
+}
+div#lista-style #editar-dica-s input#origem {
+  background-color: rgba(0,0,0,.1);
+  width: 89%;
+  margin: 2px 5%;
+  height: 30px;
+  border: 0;
+  padding: 4px .5%;
+  border: 1px solid black;
+}
+div#lista-style #editar-dica-s select.selectOptionEditar {
+  background-color: rgba(0,0,0,.1);
+  width: 90%;
+  height: 30px;
+  float: left;
+  margin: 2px 5%;
+  border: 1px solid black;
+}
+div#lista-style #editar-dica-s #btn-control {
+  background-color: rgba(0,0,0,0);
+  width: 90%;
+  hright: 30px;
+  float: left;
+  margin: 4px 5%;
+}
+div#lista-style #editar-dica-s #btn-control input {
+  background-color: rgba(0,0,0,.1);
+  width: 32.66%;
+  height: 30px;
+  float: left;
+  border: 0;
+  font-size: 12pt;
+  border: 1px solid black;
+}
+div#lista-style #editar-dica-s #btn-control input:hover {
+  cursor: pointer;
+  font-style: italic;
+  transform: scale(1.02);
+}
+div#lista-style #editar-dica-s #btn-control input#update {
+  color: green;
+}
+div#lista-style #editar-dica-s #btn-control input#reset {
+  margin: 0 1%;
+  color: white;
+}
+div#lista-style #editar-dica-s #btn-control input#apagar {
+  color: red;
+}
+section#seja-sabio-lista #topo-sabio {
+  width: 100%;
+  height: 66px;
+  float: left;
+  margin-bottom: 6px;
+}
+section#seja-sabio-lista #tituloMFKB {
+  background-color: rgba(0,0,0,.7);
+  width: 15%;
+  hright: 30px;
+  float: left;
+  text-align: center;
+  padding: 13px .5%;
+  font-size: 16pt;
+  font-weight: bolder;
+  margin: 7px 1%;
+  border-radius: .5rem;
+  color: black;
+}
+section#seja-sabio-lista form#form-seja-sabio {
+  background-color: rgba(0,0,0,.3);
+  float: left;
+  width: 80%;
+  height: 30px;
+  margin: 14px 0;
+  padding: 5px .5%;
+  border-radius: .5rem;
+  color: black;
+}
+section#seja-sabio-lista #topo-sabio input.buscar-sabio {
+  background-color: rgba(255,255,255,1);
+  width: 77.1%;
+  padding: 2px .5%;
+  float: left;
+  margin-right: 1%;
+  height: 26px;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+section#seja-sabio-lista form#form-seja-sabio #def-filtrar {
+  background-color: white;
+  width: 31.5%;
+  float: left;
+  padding: 2px .5%;
+}
+section#seja-sabio-lista form#form-seja-sabio #buscar-definicoes {
+  width: 45%;
+}
+section#seja-sabio-lista form#form-seja-sabio #def-filtrar label {
+  background-color: white;
+  width: 29%;
+  padding: 4px .5%;
+  float: left;
+  text-align: right;
+}
+section#seja-sabio-lista form#form-seja-sabio #def-filtrar select {
+  background-color: white;
+  border: 0;
+  padding: 4.5px .5%;
+  width: 70%;
+  font-size: 10pt;
+}
+section#seja-sabio-lista #topo-sabio input#buscar-ti {
+  width: 35%;
+}
+section#seja-sabio-lista #topo-sabio div.filtros {
+  background-color: rgba(255,255,255,1);
+  width: 24%;
+  height: 30px;
+  float: left;
+}
+section#seja-sabio-lista #topo-sabio div#filtros {
+  margin-left: .5%;
+}
+section#seja-sabio-lista #topo-sabio div.filtros label {
+  width: 35%;
+  padding: 6px .5%;
+  text-align: right;
+  float: left;
+}
+section#seja-sabio-lista #topo-sabio div.filtros select {
+  background-color: rgba(255,255,255,1);
+  width: 59%;
+  padding: 6.5px 1%;
+  float: left;
+  border: 0;
+}
+section#seja-sabio-lista #topo-sabio input.btn-buscar {
+  background-color: rgba(255,255,255,1);
+  width: 20%;
+  height: 29px;
+  float: left;
+  float: right;
+  color: black;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+section#seja-sabio-lista #topo-sabio input#btn-ti-busca {
+  width: 14%;
+}
+section#seja-sabio-lista #topo-sabio input.btn-buscar:hover {
+  color: white;
+  background-color: rgba(0,0,0,.8);
+  cursor: pointer;
+  transform: scale(1.01);
+}
+section#seja-sabio-lista .dicas-de-sabedoria {
+  background-color: rgba(0,0,0,.1);
+  float: left;
+  width: 97%;
+  margin: 0 1.5%;
+  margin-bottom: 5px;
+  border-radius: .5rem;
+  color: black;
+}
+section#seja-sabio-lista .dicas-de-sabedoria img {
+  width: 65px;
+  height: 65px;
+  float: left;
+  border-radius: 50%;
+  margin: 5px .5%;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .conteiner-dados-user {
+  width: 91.5%;
+  float: left;
+  margin-top: 5px;
+  margin-right: .5rem;
+  padding: 2px .25%;
+  margin-bottom: 2px;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .conteiner-dados-user .nome {
+
+}
+section#seja-sabio-lista .dicas-de-sabedoria .conteiner-dados-user a {
+  color: black;
+  text-decoration: none;
+  float: right;
+  font-size: 10pt;
+  margin-left: 5px;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .conteiner-dados-user .fonte {
+  font-size: 10pt;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .dica-s {
+  padding: 2px .5%;
+  text-align: justify;
+  float: left;
+  width: 90%;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .roda-peS {
+  background-color: rgba(0,0,0,0);
+  float: left;
+  width: 99%;
+  height: 23px;
+  padding: 3px .5%;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 12pt;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .roda-peS .reacoes, .comentarios, .denunciar, .share, .data, .more-info, .lida {
+  min-width: 2%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-right: 1%;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .roda-peS button {
+  background-color: rgba(255,255,255,1);
+  height: 20px;
+  border: 0;
+  padding: 2px 6px;
+  float: left;
+  border-radius: .5rem;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,.5);
+}
+section#seja-sabio-lista .dicas-de-sabedoria .roda-peS button:hover {
+  cursor: pointer;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .roda-peS .lida .marcar-dica-nao-lida, .marcar-dica-lida {
+  background-color: red;
+  width: 7px;
+  height: 6px;
+  float: right;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .roda-peS .lida .marcar-dica-lida {
+  background-color: green;
+}
+section#seja-sabio-lista .dicas-de-sabedoria div#add-comentario {
+  background-color: rgba(255,255,255,1);
+  width: 98%;
+  margin: 0 1%;
+  float: left;
+  margin-bottom: 10px;
+  border-radius: .5rem;
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0,.5);
+}
+section#seja-sabio-lista .dicas-de-sabedoria div#add-comentario textarea {
+  background-color: rgba(0,0,0,.1);
+  width: 89%;
+  height: 80px;
+  float: left;
+  margin: 4px .5%;
+  padding: 4px .5%;
+  border-top-left-radius: .5rem;
+  text-align: justify;
+}
+section#seja-sabio-lista .dicas-de-sabedoria div#add-comentario input {
+  background-color: rgba(0,0,0,.5);
+  width: 8.5%;
+  height: 30px;
+  float: left;
+  margin: 4px 0;
+  border-top-right-radius: .5rem;
+}
+section#seja-sabio-lista .dicas-de-sabedoria div#add-comentario input:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+section#seja-sabio-lista .dicas-de-sabedoria div#add-comentario #listar-comentarios {
+  width: 90%;
+  float: left;
+  margin: 2px .5%;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  overflow: hidden;
+}
+section#seja-sabio-lista .dicas-de-sabedoria div#add-comentario #listar-comentarios .comentario {
+  background-color: rgba(0,0,0,.1);
+  width: 99%;
+  padding: 3px .5%;
+  float: left;
+  margin-bottom: 2px;
+}
+section#seja-sabio-lista .dicas-de-sabedoria div#add-comentario #listar-comentarios p {
+  width: 100%;
+  height: 18px;
+  padding: 5px 0;
+  text-align: center;
+  float: left;
+  margin-top: 3px;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .coment-dados-user {
+  width: 100%;
+  float: left;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .coment-dados-user img {
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .coment-dados-user .users {
+  width: 93%;
+  height: 35px;
+  margin-top: 10px;
+  float: left;
+  padding: 0 .5%;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .coment-dados-user .users .name {
+  width: 90%;
+  float: left;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .coment-dados-user #btn-delete {
+  background-color: rgba(0,0,0,0);
+  width: 6%;
+  height: 20px;
+  float: right;
+  border-radius: 0;
+  margin: 0;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .coment-dados-user .users .data {
+  width: 100%;
+  font-size: 11pt;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .comentario-user {
+  border-radius: .1rem;
+  width: 93.5%;
+  float: right;
+  text-align: justify;
+  margin-top: 2px;
+  padding: 2px 0;
+}
+section#seja-sabio-lista .dicas-de-sabedoria .roda-peS .share {
+
+}
+section#seja-sabio-lista .dicas-de-sabedoria .roda-peS .data {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

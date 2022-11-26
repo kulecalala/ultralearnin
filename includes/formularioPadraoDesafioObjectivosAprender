@@ -1,0 +1,22 @@
+
+<main id="objectivos-e-desafios">
+  <div class="topo-pesquisar">
+    <div id="titulo-top">Objectivos</div>
+    <div id="formulario">
+      <form class="" action="" method="method">
+        <input type="text" name="pesquisar_por" value="<?=$b_frase?>" placeholder="Pesquise ma sua lista, o que é que você deseja aprender!"/>
+
+        <label for="filtro">Filtrar por: </label>
+        <select class="" size="1" name="filtrar_por">
+          <option value=""> Selecione o filtro </option>
+        </select>
+
+        <button type="submit" name="btn-buscar">Buscar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="corpo-view-dados">
+    <?=$carregarListasQueroAprender?>
+  </div>
+</main>

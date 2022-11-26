@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+div#topo-menu div#dect-titulo {
+  background-color: #2d2929;
+  width: 17%;
+  float: left;
+  margin: 5px .5%;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14pt;
+  font-weight: bolder;
+  border-radius: .5rem;
+  color: white;
+}
+div#topo-menu div#find-words {
+  background-color: rgba(0,0,0,.5);
+  width: 80%;
+  height: 32px;
+  padding: 4px .5%;
+  float: left;
+  margin: 10px .5%;
+  border-radius: .5rem;
+}
+div#topo-menu div#find-words input {
+  background-color: rgba(255,255,255,1);
+  width: 48%;
+  height: 30px;
+  float: left;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  color: black;
+  padding: 0 1%;
+}
+div#topo-menu div#find-words div#filtar-por {
+  background-color: rgba(255,255,255,1);
+  width: 41.1%;
+  height: 28px;
+  padding: 2px .5%;
+  float: left;
+  margin: 0 .7%;
+  color: black;
+}
+div#topo-menu div#find-words label {
+  background-color: rgba(255,255,255,1);
+  width: 24%;
+  padding: 5px .5%;
+  float: left;
+  text-align: right;
+}
+div#topo-menu div#find-words select {
+  background-color: rgba(255,255,255,1);
+  width: 36%;
+  margin: 0;
+  border: 0;
+  padding: 5px .5%;
+  float: left;
+  font-size: 11pt;
+  margin-right: 1%;
+}
+div#topo-menu div#find-words button {
+  background-color: white;
+  width: 6%;
+  height: 32px;
+  font-size: 12pt;
+  float: right;
+  border: 0;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  color: rgba(0,0,0,.5);
+}
+div#topo-menu div#find-words button:hover {
+  cursor: pointer;
+  color: rgba(0,0,0,1);
+}
+div#sms-termos-indisponiveis {
+  text-align: center;
+  padding: 50% 2%;
+}
+
+section#visualizar-termos-dict {
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  height: 489px;
+  float: left;
+  color: black;
+}
+section#visualizar-termos-dict h2 {
+  margin: 0;
+  width: 97%;
+  padding: 10px 1.5%;
+  float: left;
+}
+section#visualizar-termos-dict span {
+  background-color: #2d2929;
+  float: right;
+  width: 30px;
+  height: 30px;
+  font-weight: normal;
+  font-size: 10pt;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#visualizar-termos-dict span:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.informacoes-adicionais-dict {
+  background-color: #2d2929;
+  width: 25%;
+  min-height: 20vh;
+  margin-top: 7px;
+  margin-left: 52.7%;
+  position: fixed;
+  border-radius: .5rem;
+  transform: scale(1.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+  transform: 0.3s ease-in-out;
+  padding: 5px .5%;
+  color: white;
+}
+div.informacoes-adicionais-dict #mais-sobre-dict-traducao {
+  width: 99%;
+  padding: 0 .5%;
+  float: left;
+  text-align: center;
+}
+div.informacoes-adicionais-dict #mais-sobre-dict-traducao p {
+  float: left;
+  width: 87%;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+}
+div.informacoes-adicionais-dict #caixa-de-info-dict {
+  width: 99%;
+  padding: 3px .5%;
+  float: left;
+  margin-top: 2px;
+  min-height: 14vh;
+}
+div.informacoes-adicionais-dict #caixa-de-info-dict p {
+  text-align: left;
+  margin: 0;
+}
+section#visualizar-termos-dict #dict-termo-detalhes {
+  width: 96%;
+  min-height: 0;
+  max-height: 395px;
+  padding: 2px 2%;
+  float: left;
+  overflow: auto;
+  margin: 0;
+}
+section#visualizar-termos-dict #dict-termo-detalhes p {
+  margin: 0;
+  width: 100%;
+  padding: 2px 0;
+  float: left;
+  text-align: justify;
+  margin-bottom: 15px;
+  text-indent: 15px;
+}
+section#visualizar-termos-dict p {
+  margin: 0;
+  width: 96%;
+  padding: 2px 2%;
+  float: left;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+section#visualizar-termos-dict a {
+  color: black;
+  width: 90%;
+  text-align: center;
+  padding: 2.5px 37.5%;
+  margin: 10px 2%;
+}
+section#visualizar-termos-dict #mais-info {
+  background-color: rgba(0,0,0,.2);
+  width: 95%;
+  padding: 4px .5%;
+  margin: 5px 2%;
+  float: left;
+  border-radius: .5rem;
+}
+section#visualizar-termos-dict #mais-info div.caixinhas {
+  float: left;
+  margin-right: .5%;
+  min-width: 5%;
+}
+section#visualizar-termos-dict #mais-info div.caixinhas a {
+  padding: 0;
+  margin: 0;
+
+}
+section#visualizar-termos-dict #mais-info div.caixinhas button {
+  background-color: rgba(255,255,255,.6);
+  float: left;
+  border-radius: .3rem;
+  border: 0;
+  padding: 2px 8px;
+}
+section#visualizar-termos-dict #mais-info div.caixinhas button:hover {
+  cursor: pointer;
+  background-color: rgba(255,255,255,1);
+}
+
+.editar-termo-dict {
+  background-color: rgba(0,0,0,.3);
+  width: 1071px;
+  height: 73.6vh;
+  float: left;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+}
+div.editar-termo-dict div#dados-termo-a-editar {
+  background-color: rgba(255,255,255,1);
+  width: 60%;
+  height: 475px;
+  float: left;
+  margin: 5px 20%;
+  border-radius: .5rem;
+  color: black;
+}
+div.editar-termo-dict div#dados-termo-a-editar h3 {
+  padding: 5px 1%;
+  width: 98%;
+  margin: 3px 0 0 0;
+}
+div.editar-termo-dict div#dados-termo-a-editar input {
+  background-color: rgba(0,0,0,.2);
+  width: 80%;
+  height: 20px;
+  padding: 2px .5%;
+  margin: 2px 9.5% 0 9.5%;
+  float: left;
+}
+div.editar-termo-dict div#dados-termo-a-editar textarea {
+  background-color: rgba(0,0,0,.2);
+  width: 80%;
+  height: 80px;
+  padding: 2px .5%;
+  margin: 2px 9.5% 0 9.5%;
+  float: left;
+  overflow: auto;
+}
+div.editar-termo-dict div#dados-termo-a-editar select.editar-dictionary {
+  background-color: rgba(0,0,0,.2);
+  width: 81%;
+  height: 28px;
+  padding: 5px .5%;
+  margin: 2px 9.5% 0 9.5%;
+  float: left;
+  border: 0;
+}
+div.editar-termo-dict div#dados-termo-a-editar #dict-denuncias-sugestoes {
+  background-color: rgba(0,0,0,.2);
+  width: 81%;
+  height: 165px;
+  float: left;
+  margin: 2px 9.5%;
+}
+div.editar-termo-dict div#dados-termo-a-editar #btns-control-update-dict {
+  background-color: rgba(0,0,0,0);
+  width: 81%;
+  height: 30px;
+  float: left;
+  margin: 2px 9.5%;
+}
+.editar-termo-dict #dados-termo-a-editar #btns-control-update-dict input {
+  width: 32.27%;
+  height: 26px;
+  margin: 2px 0;
+  padding: 2px .5%;
+  float: left;
+  font-size: 12pt;
+}
+.editar-termo-dict #dados-termo-a-editar #btns-control-update-dict input:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.editar-termo-dict #dados-termo-a-editar #btns-control-update-dict #UpdateDict {
+  background-color: green;
+}
+.editar-termo-dict #dados-termo-a-editar #btns-control-update-dict #resetDict {
+  margin-left: 1.6%;
+  margin-right: 1.6%;
+  background-color: greenyellow;
+}
+.editar-termo-dict #dados-termo-a-editar #btns-control-update-dict #deleteDict {
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

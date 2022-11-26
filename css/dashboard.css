@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+body {
+  background-color: #2d2929;
+  margin: 0;
+  padding: 0;
+  color: #999;
+  font-family: sans-serif;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+div#container {
+  width: 100%;
+  height: 100vh;
+  float: left;
+}
+
+/*Menu lateral */
+div#container nav {
+  background-color: rgba(0,0,0,0);
+  width: 18%;
+  height: 98.5vh;
+  float: left;
+  margin: 2px 0 0 .5%;
+}
+div#container ul {
+  width: 100%;
+  height: 89%;
+  padding: 0;
+  list-style: none;
+}
+div#container li {
+  background-color: rgba(0,0,0,0);
+  width: 89%;
+  padding: 5px .5%;
+  margin: 0 0 3px 5%;
+  font-size: 12pt;
+}
+div#container a:hover {
+  color: rgba(255,255,255,1);
+}
+
+div#go-home {
+  background-color: rgba(0,0,0,0);
+  width: 91%;
+  padding: 10px 0;
+  font-size: 22pt;
+  font-weight: bolder;
+  margin: 0;
+  text-align: left;
+}
+div#go-home:hover {
+  cursor: pointer;
+}
+
+/*Topo da pagina*/
+div#container header {
+  background-color: rgba(0,0,0,0);
+  width: 99%;
+  height: 50px;
+  float: right;
+  margin: 5px .5% 0 .5%;
+  position: fixed;
+}
+div#dashboard {
+  background-color: rgba(0,0,0,.3);
+  float: left;
+  margin-left: 17.5%;
+  padding: 8px 1%;
+  font-size: 20pt;
+  border-radius: .5rem;
+  box-shadow: 0px 1px 1px 2px rgba(0,0,0,.6);
+}
+div#dados-utilizador {
+  width: 33%;
+  height: 60px;
+  float: right;
+  margin: 3px .5%;
+  padding-left: .3%;
+}
+div#utilizador-name {
+  min-width: 5%;
+  padding: 8px .7%;
+  font-size: 12pt;
+  margin: 10px .7%;
+  float: right;
+}
+div#utilizador-foto {
+  background-color: red;
+  width: 55px;
+  height: 55px;
+  float: right;
+  border-radius: 50%;
+  border: 2px solid #999;
+}
+div#utilizador-foto img#globalUserfotoDePerfil {
+  width: 100%;
+  height: 100%;
+  float: left;
+  border-radius: 50%;
+}
+/* Configuracao do corpo pagina */
+div#container section {
+  background-color: rgba(255,255,255,.5);
+  width: 76%;
+  height: 85vh;
+  float: right;
+  margin: 75px 5% 0 .5%;
+  box-shadow: 0px 1px 1px 2px rgba(0,0,0,.5);
+  border-radius: .5rem;
+}
